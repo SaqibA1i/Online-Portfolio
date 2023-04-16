@@ -1,12 +1,8 @@
 import Icon from "./images/profile.jpg";
 import bg from "./images/body-wave2.png";
 import React, { useEffect } from "react";
+const Jobs = ["fullstack engineering", "freelancing", "silicon valley"];
 
-const Jobs = [
-  "Frontend Engineering",
-  "Backend Engineering",
-  "DevOps Developer",
-];
 function SectionCard() {
   let bubbles = [];
 
@@ -23,7 +19,8 @@ function SectionCard() {
       .addEventListener("animationiteration", () => {
         let element = document.getElementById("dev");
         let job = element.innerText;
-        let index = (Jobs.indexOf(job) + 1) % Jobs.length;
+        let index = (Jobs.indexOf(job.toLowerCase()) + 1) % Jobs.length;
+
         document.getElementById("dev").innerText = Jobs[index];
       });
 
