@@ -8,6 +8,11 @@
   position: relative;
   height: 30px;
   z-index: -100;
+  min-width: 320px;
+  max-width: 4096px;
+  width: 200%;
+  height: 30px;
+  scale: 1.1;
 }
 
 .job-info {

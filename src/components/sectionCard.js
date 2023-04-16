@@ -92,7 +92,7 @@ function SectionCard() {
             alt="wave"
           />
           <h1 data-aos="fade-down">
-            SAQIB ALI
+            Saqib Ali
             <br />
             <p class="aspire" data-aos="fade-down" data-aos-delay="200">
               <div id="dev">{Jobs[0]}</div>
@@ -105,7 +105,7 @@ function SectionCard() {
           </p>
           <div class="section-container-btns">
             <div data-aos="zoom-in-right">
-              <a href="mailto:saqibalip321@gmail.com" class="mail">
+              <a href="mailto:s248ali@uwaterloo.ca" class="mail">
                 Email Me
               </a>
             </div>

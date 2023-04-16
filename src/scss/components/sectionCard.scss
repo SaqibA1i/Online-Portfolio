@@ -48,6 +48,7 @@
       transition: 1000ms left ease-out;
     }
     h1 {
+      text-transform: uppercase;
       font-size: 50px;
       font-family: Arial, Helvetica, sans-serif;
       color: $text-grey;
@@ -59,9 +60,9 @@
         color: $yellow;
         margin: 0 auto;
         margin-bottom: 20px;
-        max-width: 500px;
+        max-width: 600px;
         #dev {
-          font-size: 25px;
+          font-size: 18px;
           margin: 0 auto;
           color: $yellow;
           font-weight: 500;
@@ -125,7 +126,7 @@
     a {
       background-color: transparent;
       margin: 20px 10px 0 10px;
-      font-weight: 400;
+      font-weight: 600;
       border-radius: 10px;
       border: none;
       padding: 15px 25px;
@@ -142,6 +143,7 @@
     }
     .resume {
       color: $text-grey;
+      backdrop-filter: blur(1px);
       border: solid 2px $text-grey;
       transition: 200ms background-color ease-out, 200ms border ease-in-out,
         200ms color ease-in-out;

@@ -1,9 +1,12 @@
 import React from "react";
 import { Youtube, Github, Linkedin } from "react-bootstrap-icons";
+import wave4 from "./images/wave4.svg";
+import WaveSVG from "./waveSVG";
 
 function Footer() {
   return (
-    <>
+    <div style={{ overflow: "hidden" }}>
+      <WaveSVG color={"blue"} />
       <div class="footer">
         <div class="footer-content">
           <div class="footer-icons">
@@ -42,12 +45,13 @@ function Footer() {
             <div classNam="footer-icon" style={{ textAlignLast: "start" }}>
               <p>Saqib Ali</p>
               <p>+1 647-561-7949</p>
+              <p>s248ali@uwaterloo.ca</p>
             </div>
           </div>
-          <a href="mailto:saqibalip321@gmail.com">Lets talk!</a>
+          <a href="mailto:s248ali@uwaterloo.ca">Lets talk!</a>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

@@ -13,20 +13,24 @@
   justify-content: center;
   background: $main-accent;
   height: auto;
-  background: url("./flow.png"), rgba(3, 3, 206, 0.811);
-  background-size: cover;
   background-position: 0;
+  padding-bottom: 20px;
   p {
     margin: 0;
     margin-bottom: 10px;
   }
   .footer-content {
+    background: transparent;
+
     padding: 30px;
-    border-radius: 50% 50% 0 0;
     width: 100%;
     max-width: 500px;
     @include flex-center(column);
     align-items: flex-start;
+    h3 {
+      text-transform: uppercase;
+      color: $yellow;
+    }
     .footer-icons {
       color: white;
       display: flex;
@@ -70,6 +74,7 @@
       border-radius: 20px;
       border: none;
       box-shadow: $raised-shadow;
+      font-weight: 900;
     }
   }
 }
