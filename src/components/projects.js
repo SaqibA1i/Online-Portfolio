@@ -266,7 +266,7 @@ function Project() {
   }, []);
   return (
     <div
-      id="four"
+      id="projects"
       class="project-section back"
       style={{ "background-color": "transparent" }}
     >

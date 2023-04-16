@@ -210,7 +210,7 @@ function Experience() {
   return (
     <div style={{ overflow: "hidden" }}>
       <img src={wave4} class="top-wave" />
-      <div id="three" class="project-section">
+      <div id="experience" class="project-section">
         <h2 class="slider-header" data-aos="fade-up">
           Experience
           <hr />

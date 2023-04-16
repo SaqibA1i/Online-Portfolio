@@ -1,19 +1,17 @@
 import Icon from "./images/profile.jpg";
 import bg from "./images/body-wave2.png";
-import resume from "./files/Resume Saqib Ali.pdf";
 import React, { useEffect } from "react";
 
+const Jobs = [
+  "Frontend Engineering",
+  "Backend Engineering",
+  "DevOps Developer",
+];
 function SectionCard() {
-  const Jobs = [
-    "Frontend Engineering",
-    "Backend Engineering",
-    "DevOps Developer",
-  ];
-
   let bubbles = [];
 
   const addBubbles = () => {
-    for (let i = 0; i < 50; i++) {
+    for (let i = 0; i < 30; i++) {
       bubbles.push(<div class="bubble"></div>);
     }
     return bubbles;
@@ -30,10 +28,14 @@ function SectionCard() {
       });
 
     window.addEventListener("scroll", () => {
-      if (window.scrollY < 50) {
-        document.getElementById("navbar").className = "trans";
-      } else if (window.scrollY > 50) {
-        document.getElementById("navbar").className = "nav-scrolling";
+      const navbar = document.getElementById("navbar");
+
+      if (document.documentElement.scrollTop === 0) {
+        // Add the "top-nav" class to the navbar element
+        navbar.className = "trans";
+      } else {
+        // Remove the "top-nav" class from the navbar element
+        navbar.className = "nav-scrolling";
       }
     });
   }, []);
@@ -41,12 +43,17 @@ function SectionCard() {
   return (
     <>
       <div class="main">
-        <img data-aos="zoom-out-up" style={{ "z-index": "1300" }} src={Icon} />
+        <img
+          data-aos="zoom-out-up"
+          style={{ "z-index": "1300" }}
+          src={Icon}
+          alt="icon"
+        />
         <div class="bubble-container">
           <div class="bubble-wrap">{addBubbles()}</div>
         </div>
 
-        <div id="two" class="main-img">
+        <div id="about-us" class="main-img">
           <img
             id="image1"
             class="top-img"
@@ -58,6 +65,7 @@ function SectionCard() {
               top: 0,
               transform: "rotate(0)",
             }}
+            alt="wave svg"
           />
           <img
             id="image2"
@@ -69,6 +77,7 @@ function SectionCard() {
               position: "absolute",
               bottom: 0,
             }}
+            alt="another wave"
           />
           <img
             id="image3"
@@ -80,6 +89,7 @@ function SectionCard() {
               position: "absolute",
               bottom: 0,
             }}
+            alt="wave"
           />
           <h1 data-aos="fade-down">
             SAQIB ALI
