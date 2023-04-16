@@ -88,13 +88,14 @@ function SectionCard() {
             }}
             alt="wave"
           />
-          <h1 data-aos="fade-down">
-            Saqib Ali
+          <div data-aos="fade-down" className="header">
+            <img src="name.svg" style={{ transform: "rotate(0)" }} />
+            <h1>Saqib Ali</h1>
             <br />
             <p class="aspire" data-aos="fade-down" data-aos-delay="200">
               <div id="dev">{Jobs[0]}</div>
             </p>
-          </h1>
+          </div>
           <p data-aos="fade-down">
             A computer engineering student at the university of Waterloo with a
             strong passion for software development and solid industry

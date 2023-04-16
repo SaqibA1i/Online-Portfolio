@@ -8,13 +8,21 @@
   left: 0;
 }
 .footer {
-  // border-radius: 20% 20% 0 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   background: $main-accent;
   height: auto;
   background-position: 0;
   padding-bottom: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 60px;
+
+  img {
+    height: 100px;
+    height: fit-content;
+    width: fit-content;
+  }
   p {
     margin: 0;
     margin-bottom: 10px;
@@ -22,9 +30,9 @@
   .footer-content {
     background: transparent;
 
-    padding: 60px;
+    padding: 0px;
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
     @include flex-center(column);
     align-items: flex-start;
     h3 {
@@ -67,7 +75,7 @@
       margin: 0 auto;
       margin-top: 40px;
       padding: 10px 40px;
-      width: 200px;
+      width: -webkit-fill-available;
       font-size: 20px;
       color: $text-black;
       background: $yellow-gradient;

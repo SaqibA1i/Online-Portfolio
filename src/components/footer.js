@@ -8,6 +8,7 @@ function Footer() {
     <div style={{ overflow: "hidden" }}>
       <WaveSVG color={"blue"} />
       <div class="footer">
+        <img src="name.svg" />
         <div class="footer-content">
           <div class="footer-icons">
             <h3>Socials</h3>
