@@ -94,7 +94,7 @@ function SectionCard() {
           <h1 data-aos="fade-down">
             SAQIB ALI
             <br />
-            <p class="aspire" data-aos="fade-down">
+            <p class="aspire" data-aos="fade-down" data-aos-delay="200">
               <div id="dev">{Jobs[0]}</div>
             </p>
           </h1>
