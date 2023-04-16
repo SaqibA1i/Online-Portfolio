@@ -1,7 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Youtube, Github, Linkedin } from "react-bootstrap-icons";
-import footer from "./images/footer.png";
-import bubble from "./images/bubble.png";
 
 function Footer() {
   return (
@@ -37,8 +35,7 @@ function Footer() {
               color={"white"}
             />
           </div>
-          <a href="mailto:saqibalip321@gmail.com">Lets talk!</a
-          >
+          <a href="mailto:saqibalip321@gmail.com">Lets talk!</a>
           <div class="footer-bottom">
             <p>Saqib Ali</p>
           </div>

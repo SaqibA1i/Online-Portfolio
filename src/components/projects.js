@@ -1,16 +1,13 @@
 import React, { useEffect, useState } from "react";
-import ps5 from "./files/ps5-project.mp4";
+import ps5 from "./files/ps5-project.gif";
 import snake from "./images/snake.png";
-import portfolio from "./files/project-online.mp4";
-import qalculater from "./files/qalculater.mp4";
+import qalculater from "./files/qalculater.gif";
 import FlappyBird from "./images/flappyBird.jpg";
-import Sorting from "./files/Sorting.mp4";
-import Graph from "./files/graph_traversal.mp4";
-import qalc from "./files/qalculater.mp4";
+import Sorting from "./files/Sorting.gif";
+import Graph from "./files/graph_traversal.gif";
 import laptop from "./images/laptop.png";
-import schmart from "./files/schmart.mp4";
+import schmart from "./files/schmart.gif";
 import phone from "./images/smartphone.png";
-import codele from "./images/codele.png";
 import data_structures from "./images/data_structures_algorithms.png";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
@@ -66,22 +63,10 @@ function Project() {
         "https://github.com/Shmart-app", // github link
         "2021",
         true, // is mobile?
-        false, // is image?
+        true, // is image?
       ],
     },
-    {
-      Codele: [
-        codele,
-        <>
-          An application which presents a random algorithm and alters it daily
-          with the purpose of keeping its users on their toes with algortihms
-        </>,
-        "https://github.com/SaqibA1i/Codele",
-        "2022",
-        true,
-        true,
-      ],
-    },
+
     {
       "Grades Tracker Web App": [
         qalculater,
@@ -98,7 +83,7 @@ function Project() {
         "https://github.com/SaqibA1i/Qalculater/tree/v2.0",
         "2021 - present",
         true,
-        false,
+        true,
       ],
     },
     {
@@ -114,7 +99,7 @@ function Project() {
         "https://github.com/SaqibA1i/Graph-Traversal-Visualizer", // github link
         "2021",
         false, // is mobile?
-        false, // is image?
+        true, // is image?
       ],
     },
     {
@@ -131,7 +116,7 @@ function Project() {
         "https://github.com/SaqibA1i/Sorting-Visualizer", // github link
         "2021",
         false, // is mobile?
-        false, // is image?
+        true, // is image?
       ],
     },
 
@@ -166,33 +151,7 @@ function Project() {
         "https://github.com/SaqibA1i/Playstation-5-windows",
         "2021",
         false,
-        false,
-      ],
-    },
-    {
-      "Online Portfolio": [
-        portfolio,
-        <>
-          I enjoy front-end development, creating good looking UI and UX. I
-          created this website which introduces me, my interests, projects, work
-          experiences and much more!
-          <br />
-          <b>How it was: </b>{" "}
-          <a class="ahref" href="https://saqibfirstsite.netlify.app">
-            saqibfirstsite.netlify.app
-          </a>
-          <br />
-          <b>How its going: </b>{" "}
-          <a class="ahref" href="https://saqibali.ca">
-            saqibali.ca
-          </a>
-          <hr class="seperate-up-down" />
-          <b class="purple">Utilized: </b> React, SASS
-        </>,
-        "https://github.com/SaqibA1i/Online-Portfolio",
-        "2019 - 2021",
-        false,
-        false,
+        true,
       ],
     },
     {
