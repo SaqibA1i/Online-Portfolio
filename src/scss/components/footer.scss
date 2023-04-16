@@ -8,36 +8,48 @@
   left: 0;
 }
 .footer {
+  // border-radius: 20% 20% 0 0;
+  display: flex;
+  justify-content: center;
   background: $main-accent;
   height: auto;
-  border-top: 7px solid $main-accent-light;
+  background: url("./flow.png"), rgba(3, 3, 206, 0.811);
+  background-size: cover;
+  background-position: 0;
+  p {
+    margin: 0;
+    margin-bottom: 10px;
+  }
   .footer-content {
-    padding: 50px 0;
+    padding: 30px;
     border-radius: 50% 50% 0 0;
     width: 100%;
+    max-width: 500px;
     @include flex-center(column);
+    align-items: flex-start;
     .footer-icons {
+      color: white;
       display: flex;
       justify-content: space-around;
-      width: 400px;
-      height: 60px;
+      align-items: flex-start;
+      height: fit-content;
+      flex-direction: column;
       .footer-icon {
-        border-radius: 50%;
-        border: 2px solid white;
+        display: flex;
+        flex-direction: row;
         padding: 10px;
         transition: border 0.1s ease-in-out;
+      }
+      svg {
+        padding: 10px;
+        transition: 0.3s all;
         &:hover {
           cursor: pointer;
-          border: 4px solid $yellow;
+          scale: 1.1;
         }
       }
     }
-    .footer-bottom {
-      p {
-        font-weight: bolder;
-        color: #c6bbff;
-      }
-    }
+
     h1 {
       font-family: Arial, Helvetica, sans-serif;
       font-size: 40px;
@@ -48,6 +60,7 @@
     }
     a {
       text-decoration: none;
+      margin: 0 auto;
       margin-top: 40px;
       padding: 10px 40px;
       width: 200px;
