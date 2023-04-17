@@ -56,8 +56,10 @@
       font-weight: 550;
       text-align: center;
       margin: 0;
-      img {
+      .nameSvg {
         margin: 0 auto;
+        width: fit-content;
+        height: fit-content;
       }
       h1 {
         display: none;

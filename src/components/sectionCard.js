@@ -89,7 +89,11 @@ function SectionCard() {
             alt="wave"
           />
           <div data-aos="fade-down" className="header">
-            <img src="name.svg" style={{ transform: "rotate(0)" }} />
+            <img
+              className="nameSvg"
+              src="name.svg"
+              style={{ transform: "rotate(0)" }}
+            />
             <h1>Saqib Ali</h1>
             <br />
             <p class="aspire" data-aos="fade-down" data-aos-delay="200">
