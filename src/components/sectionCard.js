@@ -114,7 +114,7 @@ function SectionCard() {
             <div data-aos="zoom-in-left">
               <a
                 class="resume"
-                href="Saqib_Ali_Resume.pdf"
+                href="https://drive.google.com/file/d/1qp2TPaYc8QmkoGWI9t3IzqpzEY8XgexG/view"
                 type="application/pdf"
                 target="_blank"
               >
